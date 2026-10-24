@@ -3,23 +3,88 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
+  <title>Starting Lineup</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <!-- Page Heading -->
+  <h1>Starting Lineup</h1>
 
-  <h2 id="joke-display"></h2>
+  <!-- Lineup Form-->
+   <form id="lineupForm">
+
+    <!--Status Selection-->
+
+    <fieldset>
+      <legend>Status:</legend>
+
+      <p>
+        <input type="radio" id="draft" name="status" value="Draft">
+        <label for="draft">Draft</label>
+
+        <input type="radio" id="final" name="status" value="Final" checked>
+        <label for="final">Final</label>
+      </p>
+    </fieldset>
+
+    <!--Game Date Selection-->
+    <p>
+      <label for="gameDate">Date:</label>
+
+      <select id="gameDate" name="gameDate">
+        <option value="March 20">March 20</option>
+        <option value="March 24">March 24</option>
+        <option value="April 2">April 2</option>
+        <option value="April 6">April 6</option>
+        <option value="April 13">April 13</option>
+      </select>
+    </p>
+
+    <!--Player Selection-->
+    <fieldset>
+      <legend>Players:</legend>
+
+      <p>
+        <input type="checkbox" id="player1" name="players" value="Player 1">
+        <label for="player1">Player 1</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="player2" name="players" value="Player 2">
+        <label for="player2">Player 2</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="player3" name="players" value="Player 3">
+        <label for="player3">Player 3</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="player4" name="players" value="Player 4">
+        <label for="player4">Player 4</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="player5" name="players" value="Player 5">
+        <label for="player5">Player 5</label>
+      </p>
+    </fieldset>
+
+    <!--Submit Button-->
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+   </form>
+
+   <!--Display Form Results-->
+   <p id="result"></p>
+
+   <!--JavaScript-->
+   <script src="script.js"></script>
+  
 </body>
 
 </html>
